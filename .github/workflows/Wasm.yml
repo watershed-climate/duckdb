@@ -102,7 +102,7 @@ jobs:
     steps:
             - uses: actions/checkout@v4
 
-            - uses: actions/download-artifact@v4
+            - uses: actions/download-artifact@v4.1.7
               with:
                 name: duckdb_extensions_${{ matrix.duckdb_arch }}
                 path: build/to_be_deployed/${{ inputs.duckdb_ref }}/${{ matrix.duckdb_arch }}
